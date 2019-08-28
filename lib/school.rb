@@ -25,8 +25,11 @@ class School
   end
   
   def sort
-    b = Hash.new {|hash, key| hash[key] = []}
-    @roster.values.each [|e| b[e[]]]
+   sorted_values={}
+   @roster.each do |grade, student|
+     sorted_values[grade]= student.sorted_values
+   end
+   return sorted_values
   end
 end
     
