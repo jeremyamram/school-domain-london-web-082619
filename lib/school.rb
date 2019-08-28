@@ -33,11 +33,7 @@ class School
   end
 end
     
-    arr = [["a", 1], ["a", 2], [nil, 3], [nil, 4], ["b", 6], ["b", 8]]
-
-h = Hash.new {|hash, key| hash[key] = []}
-arr.each {|e| h[e[0]] << e[1]}
-p h #=> {"a"=>[1, 2], nil=>[3, 4], "b"=>[6, 8]}
+    
     
     
 
