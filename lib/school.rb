@@ -28,7 +28,7 @@ end
   def sort
    sorted_values={}
    @roster.each do |grade, student|
-     sorted_values[grade]= student.sorted_values
+     sorted_values[grade]= student.sort
    end
    return sorted_values
   end
